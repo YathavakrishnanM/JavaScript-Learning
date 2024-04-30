@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Creation of form</title>
+        <style>
+             table,tr,th,td{
+                border: 1px solid black;
+            }
+        </style>
+        <link rel="Stylesheet" href="Style.css">
+
+        <script type="text/javascript" src="Script.js">
+
+        </script>
+    </head>
+    <body>
+        <div id="table1">
+            <div class="main">
+                <h1>Login form</h1>
+            </div>
+                <form  method="post">
+
+                        <label>Name</label> <input id="first-name" type="text" placeholder="FirstName">  <input id="last-name" type="text" value="name" placeholder="LastName"><br> <br>   
+
+                        <label>Email</label>  <input id="email" type="email" placeholder="Email" required="required"><br><br>
+
+                        <label>PhoneNumber</label>  <input id="number" type="number" placeholder="10 digit number" maxlength="10" min="10" required><br><br>
+
+                        <label>Password</label>  <input id="password" type="password" placeholder="Password" maxlength="8"><br><br>
+
+                        <label>Gender</label><br>
+                            <input id="g1" type="radio" name="Gender" value="male"> Male<br>
+                            <input id="g2" type="radio" name="Gender" value="Female"> Female<br>
+                            <input id="g3" type="radio" name="Gender" value="not disclose"> not wish to disclose<br>     <br>
+
+                        <label>Address</label><br>
+                            <textarea id="address" name="address" cols="30" rows="5"></textarea><br><br>
+
+                        <label>Date of Birth</label><br>
+                            <input id="dob" type="date" name="dateofbirth"><br><br>
+
+                        <label>Time</label><br>
+                            <input id="time" type="time" name="time"><br><br>
+
+                        <label>Languages</label><br>
+                            <input type="checkbox" name="lang" value="Tamil"> Tamil<br>
+                            <input type="checkbox" name="lang" value="English"> English<br>
+                            <input type="checkbox" name="lang" value="French"> French<br><br>
+
+                        <label>Select your field by interest</label><br>
+                            <select id="select">
+                                <option value="Cricket">Cricket</option>
+                                <option value="Batmiton">Batmiton</option>
+                                <option value="music">music</option>
+                            </select><br><br>
+
+                        <label>Upload your Photo</label><br>
+                            <input id="img" type="file" value="jpg" name="photo"><br><br>
+
+                        <button onclick="transferData()">Submit</button><input type="reset" name="reset">
+                </form>
+
+        </div>
+
+        <div id="table2">
+            <h1>OUTPUT SCREEN</h1>
+
+
+            <table   style="width:70%">
+                <tr>
+                    <th style="width: 20%;">SECTION</th>
+                    <th style="width: 40%;" colspan="3">USER DETAILS</th>
+                </tr>
+            
+            
+                <tr>
+            
+                    <th>USERNAME</th>
+                    <td id="name-col" colspan="3"></td>
+  
+                </tr>
+                <tr>
+                    <th>EMAIL ID</th>
+                    <td id="email-col" colspan="3"></td>
+                </tr>
+                <tr>
+                    <th>PHONE NUMBER</th>
+                    <td id="number-col" colspan="3"></td>
+
+                </tr>
+                <tr>
+                    <th>PASSWORD</th>
+                    <td id="password-col" colspan="3"></td>
+                </tr>
+                <tr>
+                    <th>GENDER</th>
+                    <td id="gender-col" colspan="3"></td>
+                </tr>
+                <tr>
+                    <th>CURRENT ADDRESS</th>
+                    <td id="address-col" colspan="3"></td>
+                </tr>
+                <tr>
+                    <th>DATE OF BIRTH</th>
+                    <td id="dob-col" colspan="3"></td>
+                </tr>
+                <tr>
+                    <th>TIME</th>
+                    <td id="time-col" colspan="3"></td>
+                </tr>
+                <tr>
+                    <th>LANGUAGES</th>
+                    <td>TAMIL</td>
+                    <td colspan="2">ENGLISH</td>
+                </tr>
+                <tr>
+                    <th>FIELD OF INTEREST</th>
+                    <td id="field-interst">BADMITON</td>
+                    <td>CRICKET</td>
+                    <td>MUSIC</td>
+                </tr>
+                <tr>
+                    <th style="height: 100px;">UPLOAD YOUR PICTURE</th>
+                    <td colspan="3">
+                        <img id="img-col" src="Images/Person.jpg" alt="person image" width="100px" height="100PX">
+                    </td>
+                </tr>
+            </table>
+            </div>
+       
+    </body>
+</html>

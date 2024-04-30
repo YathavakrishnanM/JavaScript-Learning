@@ -1,0 +1,17 @@
+#table1{
+    height: auto; width: 40%;border: 2px solid black;padding: 2%;
+}
+
+#table2{
+    display: none;
+    text-align: center;
+    
+}
+.main{
+    text-align: center; width: 100%; border: 1px solid black;margin-bottom: 2%;
+}
+
+table{
+    margin: auto;
+    
+}
