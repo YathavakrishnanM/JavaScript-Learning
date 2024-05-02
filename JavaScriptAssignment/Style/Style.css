@@ -1,0 +1,162 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    border: 0;
+}
+
+#main_page{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#header_portion{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+#img_portion{
+    height: 100%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#img_portion img{
+    height: 50%;
+    width: 15%;
+}
+
+#img_portion h3{
+    margin-left: 2rem;
+}
+
+#book_link{
+    height: 100%;
+    width: 30%;
+    align-items: center; 
+    display: flex;
+}
+
+#book_link a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#middle_page{
+    height: 30rem;
+    width: 100%;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+#middle_page2{
+    height: 30rem;
+    width: 100%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: none;
+}
+#middle_page button{
+    height: 2rem;
+    width: 10rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+#middle_page2 button{
+    height: 2rem;
+    width: 10rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+#table1{
+    width: 50%;
+}
+
+tr td{
+   width: 50%;
+    padding: 0.5rem;
+}
+
+#table1 h2{
+    margin: 0;
+}
+
+#title{
+    font-size: 20px;
+    width: 35%;
+}
+
+select{
+    width: 100%;
+    height: 2rem;
+    font-size: 20PX;
+}
+#book{
+    height: 2rem;
+    width: 100%;
+    font-size: 20px;
+}
+
+#label_book{
+    display: none;
+}
+
+#email{
+    height: 2rem;
+    width: 100%;
+    font-size: 20px;
+}
+#label_email{
+    display: none;
+}
+
+#authorname{
+    height: 2rem;
+    width: 100%;
+    font-size: 20px;
+}
+#label_authorname{
+    display: none;
+}
+
+#year{
+    height: 2rem;
+    width: 100%;
+    font-size: 20px;
+}
+
+#label_year{
+    display: none;
+}
+
+#label_price{
+    display: none;
+}
+
+#price{
+    height: 2rem;
+    width: 100%;
+    font-size: 20px;
+}
+#book1,#email1,#name1,#published1,#price1,#Catagory{
+    font-size: 20px;
+}
+
+/* bottom portion  */
+#bottom_page{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+#bottom_page h2{
+    margin-left: 2rem;
+}

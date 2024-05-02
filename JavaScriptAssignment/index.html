@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript assignment</title>
+    <link rel="stylesheet" href="Style/Style.css">
+    <script src="Script/Script.js"  type="text/javaScript"></script>
+</head>
+<body>
+    <div id="main_page">
+        <div id="header_portion" >
+            <div id="img_portion">
+                <img src="Images/download.png">
+                <h3>Library portal</h3>
+            </div>
+            <div id="book_link"><a href="#">Books</a></div>
+        </div>
+
+        <div id="middle_page">
+           <table id="table1">
+                <tr>
+                   <td colspan="3"><h2>Add New book</h2></td> 
+                </tr>
+                <tr>
+                    <td id="title">Catagory</td>
+                    <td colspan="2"><select name="" id="select" value="IT">
+                        <option value="IT" value="IT">IT</option>
+                        <option value="agri" value="Agri">Agri</option>
+                        <option value="Communication" value="Communication">Communication</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td id="title">Book</td>
+                    <td><input type="text" id="book"  onchange="bookValidate()"></td>
+                    <td><label id="label_book"></label></td>
+                </tr>
+                <tr>
+                    <td id="title">Author Email</td>
+                    <td><input type="text" id="email" onchange="emailValidation()"></td>
+                    <td><label id="label_email"></label></td>
+                </tr>
+                <tr>
+                    <td id="title">Author Name</td>
+                    <td><input type="text" id="authorname" onchange="nameValidation()"></td>
+                    <td><label id="label_authorname"></label></td>
+                </tr>
+                <tr>
+                    <td id="title">Published</td>
+                    <td><input type="year" id="year" onchange="publishedValidate()"></td>
+                    <td><label id="label_year"></label></td>
+                </tr>
+                <tr>
+                    <td id="title">Price</td>
+                    <td><input type="text" id="price" onchange="priceValidation()"></td>
+                    <td><label id="label_price"></label></td>
+                </tr>
+            </table>
+            <button onclick="saveData()" >Save</button>
+            <button onclick="cancel()">Cancel</button>
+            <button onclick="showPage()">Show</button>
+            
+
+        </div>
+        <div id="middle_page2">
+            <table id="table1">
+                 <tr>
+                    <td colspan="3"><h2>Book Details</h2></td> 
+                 </tr>
+                 <tr>
+                     <td id="title">Catagory</td>
+                     <td id="Catagory"></td>
+                 </tr>
+                 <tr>
+                     <td id="title">Book</td>
+                     <td id="book1"></td>
+                </tr>
+                 <tr>
+                     <td id="title">Author Email</td>
+                     <td id="email1"></td>
+                 </tr>
+                 <tr>
+                     <td id="title">Author Name</td>
+                     <td id="name1"></td>
+                 </tr>
+                 <tr>
+                     <td id="title">Published</td>
+                     <td id="published1"></td>
+                 </tr>
+                 <tr>
+                     <td id="title">Price</td>
+                     <td id="price1"></td>
+                 </tr>
+             </table>
+             
+             <button onclick="backPage()">Back</button>
+ 
+         </div>
+        <div id="bottom_page">
+            <h2>Copyright@2024 - present Syncfusion</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
